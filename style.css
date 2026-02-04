@@ -1,0 +1,47 @@
+/* Layout das linhas de livros */
+.book-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1600px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.book-text {
+    font-size: 32px;
+    line-height: 1.4;
+    color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+/* Botões Rosa do Figma (Rectangle 13, 14, 15) */
+.btn-comprar {
+    background: #FD00AC;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 68px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+/* Imagens dos Livros (Links que você extraiu) */
+.ritalee { background-image: url('rita-lee.png'); } /* Verifique o nome do arquivo */
+.lula { background-image: url('lula.png'); }
+.nermatogross { background-image: url('9786559210923-228x228.jpg'); }
+.quarto { background-image: url('9788508171279-228x228.jpg'); }
+
+/* Confetes de Fundo (Opacity 0.12 do Figma) */
+.bg-confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('confetti13.png');
+    opacity: 0.12;
+    z-index: -1;
+}
