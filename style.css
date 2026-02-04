@@ -1,47 +1,97 @@
-/* Layout das linhas de livros */
-.book-row {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin: 60px auto;
-    max-width: 1600px;
+/* --- IMAGENS DOS LIVROS (POSIÇÕES EXATAS) --- */
+
+/* ritalee */
+.img-ritalee { 
+    position: absolute; 
+    width: 427px; height: 592px; 
+    background: url(ritalee.png); 
+    top: 2600px; left: 160px; 
 }
 
-.book-info {
-    flex: 1;
+/* lula */
+.img-lula { 
+    position: absolute; 
+    width: 409px; height: 597px; 
+    background: url(lula.png); 
+    top: 4000px; left: 160px; 
 }
 
-.book-text {
-    font-size: 32px;
-    line-height: 1.4;
-    color: #1E1E1E;
-    margin-bottom: 20px;
+/* Neymatogross */
+.img-ney { 
+    position: absolute; 
+    width: 392px; height: 596px; 
+    background: url(9786559210923-228x228.jpg); 
+    top: 1900px; left: 160px; 
 }
 
-/* Botões Rosa do Figma (Rectangle 13, 14, 15) */
-.btn-comprar {
-    background: #FD00AC;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 68px;
-    font-size: 24px;
-    display: inline-block;
+/* quarto (Carolina Maria de Jesus) */
+.img-quarto { 
+    position: absolute; 
+    width: 411px; height: 652px; 
+    background: url(9788508171279-228x228.jpg); 
+    top: 3300px; left: 160px; 
 }
 
-/* Imagens dos Livros (Links que você extraiu) */
-.ritalee { background-image: url('rita-lee.png'); } /* Verifique o nome do arquivo */
-.lula { background-image: url('lula.png'); }
-.nermatogross { background-image: url('9786559210923-228x228.jpg'); }
-.quarto { background-image: url('9788508171279-228x228.jpg'); }
+/* --- BLOCOS DE TEXTO E BOTÕES ROSA --- */
 
-/* Confetes de Fundo (Opacity 0.12 do Figma) */
-.bg-confetti {
+/* Rectangle 13 (Botão Ney) */
+.rect-pink-ney {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('confetti13.png');
-    opacity: 0.12;
-    z-index: -1;
+    width: 765px; height: 92px;
+    background: #FD00AC; border-radius: 68px;
+    top: 2200px; left: 600px;
+}
+
+/* Rectangle 14 (Botão Rita Lee) */
+.rect-pink-rita {
+    position: absolute;
+    width: 838px; height: 89px;
+    background: #FD00AC; border-radius: 68px;
+    top: 2900px; left: 600px;
+}
+
+/* Rectangle 15 (Botão Carolina) */
+.rect-pink-carolina {
+    position: absolute;
+    width: 530px; height: 89px;
+    background: #FD00AC; border-radius: 68px;
+    top: 3600px; left: 600px;
+}
+
+/* Rectangle 5 (Botão Lula) */
+.rect-pink-lula {
+    position: absolute;
+    width: 765px; height: 92px;
+    background: #FD00AC; border-radius: 68px;
+    top: 4300px; left: 600px;
+}
+
+/* --- TEXTOS DAS BIOGRAFIAS --- */
+
+.txt-ney {
+    position: absolute; width: 1094px; height: 345px;
+    font-size: 48px; top: 1900px; left: 600px; color: #1E1E1E;
+}
+
+.txt-rita {
+    position: absolute; width: 1094px; height: 345px;
+    font-size: 48px; top: 2600px; left: 600px; color: #1E1E1E;
+}
+
+.txt-carolina {
+    position: absolute; width: 1209px; height: 345px;
+    font-size: 48px; top: 3300px; left: 600px; color: #1E1E1E;
+}
+
+.txt-lula {
+    position: absolute; width: 1209px; height: 345px;
+    font-size: 48px; top: 4000px; left: 600px; color: #1E1E1E;
+}
+
+/* Fireworks (Fogos de Artifício) */
+.fireworks {
+    position: absolute;
+    width: 617px; height: 465px;
+    background: url(Fireworks.png);
+    top: 4500px; left: 1200px;
 }
