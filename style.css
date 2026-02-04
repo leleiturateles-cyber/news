@@ -1,97 +1,91 @@
-/* --- IMAGENS DOS LIVROS (POSIÇÕES EXATAS) --- */
+/* Reset Básico */
+body { margin: 0; padding: 0; background: #D9D9D9; overflow-x: auto; }
 
-/* ritalee */
-.img-ritalee { 
-    position: absolute; 
-    width: 427px; height: 592px; 
-    background: url(ritalee.png); 
-    top: 2600px; left: 160px; 
+.figma-container {
+    width: 1920px;
+    height: 5287px;
+    position: relative;
+    margin: 0 auto;
+    background: #D9D9D9;
 }
 
-/* lula */
-.img-lula { 
-    position: absolute; 
-    width: 409px; height: 597px; 
-    background: url(lula.png); 
-    top: 4000px; left: 160px; 
+/* --- CAMADAS DE CONFETES --- */
+.confetti-1, .confetti-2, .confetti-3, .confetti-4 {
+    position: absolute; background: url(confetti13.png); opacity: 0.12; pointer-events: none;
+}
+.confetti-1 { width: 1780px; height: 1800px; top: 0; left: 70px; }
+.confetti-2 { width: 1724px; height: 1248px; top: 1200px; left: 100px; }
+.confetti-3 { width: 677px; height: 1717px; top: 2400px; left: 0px; }
+.confetti-4 { width: 614px; height: 1120px; top: 4100px; left: 1300px; }
+
+/* --- HEADER (Rectangle 2 + Logo) --- */
+.rectangle-2 {
+    position: absolute; width: 1920px; height: 226px;
+    background: #0033A0; border-radius: 70px 70px 0px 0px; top: 0; left: 0;
+}
+.logo-horizontal {
+    position: absolute; width: 359px; height: 95px;
+    background: url(LOGO_HORIZONTAL_BEIGE.png); top: 65px; left: 150px;
+}
+.newsletter-title {
+    position: absolute; width: 830px; height: 262px;
+    font-family: 'Poppins'; font-weight: 400; font-size: 48px; color: #FFFFFF;
+    top: 75px; left: 550px;
 }
 
-/* Neymatogross */
-.img-ney { 
-    position: absolute; 
-    width: 392px; height: 596px; 
-    background: url(9786559210923-228x228.jpg); 
-    top: 1900px; left: 160px; 
+/* --- TEXTOS INTRODUTÓRIOS --- */
+.intro-text-lê {
+    position: absolute; width: 1599px; height: 696px;
+    font-family: 'Poppins'; font-weight: 500; font-size: 64px; line-height: 96px;
+    color: #1E1E1E; top: 350px; left: 160px;
+}
+.intro-text-carnaval {
+    position: absolute; width: 1655px; height: 696px;
+    font-family: 'Poppins'; font-weight: 500; font-size: 64px; line-height: 96px;
+    color: #1E1E1E; top: 1100px; left: 160px;
 }
 
-/* quarto (Carolina Maria de Jesus) */
-.img-quarto { 
-    position: absolute; 
-    width: 411px; height: 652px; 
-    background: url(9788508171279-228x228.jpg); 
-    top: 3300px; left: 160px; 
+/* --- BOTÃO AZUL VOLTA ÀS AULAS --- */
+.rect-blue-btn {
+    position: absolute; width: 707px; height: 127px;
+    background: #0033A0; border-radius: 68px; top: 900px; left: 606px;
+}
+.text-btn-garantir {
+    position: absolute; width: 570px; height: 96px;
+    font-family: 'Poppins'; font-weight: 900; font-size: 48px; 
+    text-decoration: underline; color: #FFFFFF; top: 915px; left: 675px;
 }
 
-/* --- BLOCOS DE TEXTO E BOTÕES ROSA --- */
+/* --- LIVROS (POSIÇÕES) --- */
+.img-ney { position: absolute; width: 392px; height: 596px; background: url(9786559210923-228x228.jpg); top: 1900px; left: 160px; }
+.img-rita { position: absolute; width: 427px; height: 592px; background: url(ritalee.png); top: 2600px; left: 160px; }
+.img-carolina { position: absolute; width: 411px; height: 652px; background: url(9788508171279-228x228.jpg); top: 3300px; left: 160px; }
+.img-lula { position: absolute; width: 409px; height: 597px; background: url(lula.png); top: 4050px; left: 160px; }
 
-/* Rectangle 13 (Botão Ney) */
-.rect-pink-ney {
-    position: absolute;
-    width: 765px; height: 92px;
-    background: #FD00AC; border-radius: 68px;
-    top: 2200px; left: 600px;
+/* --- TEXTOS BIOGRAFIAS --- */
+.txt-bio-ney, .txt-bio-rita, .txt-bio-carolina, .txt-bio-lula {
+    position: absolute; font-family: 'Poppins'; font-weight: 500; font-size: 48px; line-height: 72px; color: #1E1E1E;
 }
+.txt-bio-ney { width: 1094px; top: 1900px; left: 630px; }
+.txt-bio-rita { width: 1094px; top: 2600px; left: 630px; }
+.txt-bio-carolina { width: 1209px; top: 3300px; left: 630px; }
+.txt-bio-lula { width: 1209px; top: 4050px; left: 630px; }
 
-/* Rectangle 14 (Botão Rita Lee) */
-.rect-pink-rita {
-    position: absolute;
-    width: 838px; height: 89px;
-    background: #FD00AC; border-radius: 68px;
-    top: 2900px; left: 600px;
+/* --- RETÂNGULOS ROSA --- */
+.rect-pink-1, .rect-pink-2, .rect-pink-3, .rect-pink-4 {
+    position: absolute; background: #FD00AC; border-radius: 68px;
 }
+.rect-pink-1 { width: 765px; height: 92px; top: 2150px; left: 630px; }
+.rect-pink-2 { width: 765px; height: 92px; top: 2850px; left: 630px; }
+.rect-pink-3 { width: 838px; height: 89px; top: 3550px; left: 630px; }
+.rect-pink-4 { width: 530px; height: 89px; top: 4300px; left: 630px; }
 
-/* Rectangle 15 (Botão Carolina) */
-.rect-pink-carolina {
-    position: absolute;
-    width: 530px; height: 89px;
-    background: #FD00AC; border-radius: 68px;
-    top: 3600px; left: 600px;
+/* --- DECORAÇÃO --- */
+.mask-carnival {
+    position: absolute; width: 581px; height: 288px; background: url(mask_carnival.png);
+    transform: rotate(16.99deg); top: 1600px; left: 1300px;
 }
-
-/* Rectangle 5 (Botão Lula) */
-.rect-pink-lula {
-    position: absolute;
-    width: 765px; height: 92px;
-    background: #FD00AC; border-radius: 68px;
-    top: 4300px; left: 600px;
-}
-
-/* --- TEXTOS DAS BIOGRAFIAS --- */
-
-.txt-ney {
-    position: absolute; width: 1094px; height: 345px;
-    font-size: 48px; top: 1900px; left: 600px; color: #1E1E1E;
-}
-
-.txt-rita {
-    position: absolute; width: 1094px; height: 345px;
-    font-size: 48px; top: 2600px; left: 600px; color: #1E1E1E;
-}
-
-.txt-carolina {
-    position: absolute; width: 1209px; height: 345px;
-    font-size: 48px; top: 3300px; left: 600px; color: #1E1E1E;
-}
-
-.txt-lula {
-    position: absolute; width: 1209px; height: 345px;
-    font-size: 48px; top: 4000px; left: 600px; color: #1E1E1E;
-}
-
-/* Fireworks (Fogos de Artifício) */
 .fireworks {
-    position: absolute;
-    width: 617px; height: 465px;
-    background: url(Fireworks.png);
-    top: 4500px; left: 1200px;
+    position: absolute; width: 617px; height: 465px; background: url(Fireworks.png);
+    top: 4600px; left: 1300px;
 }
