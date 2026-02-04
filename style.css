@@ -1,72 +1,108 @@
-.box {
-  width: 1920px;
-  height: 226px;
+/* --- RESET E GLOBAL --- */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
-.box .rectangle {
-  position: fixed;
-  top: -111px;
-  left: -227px;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* Evita barra de rolagem lateral */
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* --- CONTAINER CENTRALIZADOR --- */
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.email {
+  position: relative;
+  width: 1920px;
+  height: 5287px; /* Altura total do seu design */
+  background-color: #d9d9d9;
+}
+
+/* --- HEADER AZUL (CORRIGIDO) --- */
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 1920px;
   height: 226px;
   background-color: #0033a0;
   border-radius: 70px 70px 0px 0px;
+  z-index: 5;
 }
-
 
 /* --- TEXTOS INTRODUTÓRIOS --- */
 .intro-text-lê {
-    position: absolute; width: 1599px; height: 696px;
-    font-family: 'Poppins'; font-weight: 500; font-size: 64px; line-height: 96px;
-    color: #1E1E1E; top: 350px; left: 160px;
+  position: absolute; width: 1599px;
+  font-weight: 500; font-size: 64px; line-height: 96px;
+  color: #1E1E1E; top: 350px; left: 160px;
 }
 .intro-text-carnaval {
-    position: absolute; width: 1655px; height: 696px;
-    font-family: 'Poppins'; font-weight: 500; font-size: 64px; line-height: 96px;
-    color: #1E1E1E; top: 1100px; left: 160px;
+  position: absolute; width: 1655px;
+  font-weight: 500; font-size: 64px; line-height: 96px;
+  color: #1E1E1E; top: 1100px; left: 160px;
 }
 
 /* --- BOTÃO AZUL VOLTA ÀS AULAS --- */
 .rect-blue-btn {
-    position: absolute; width: 707px; height: 127px;
-    background: #0033A0; border-radius: 68px; top: 900px; left: 606px;
+  position: absolute; width: 707px; height: 127px;
+  background: #0033A0; border-radius: 68px; top: 900px; left: 606px;
+  display: flex; align-items: center; justify-content: center;
 }
 .text-btn-garantir {
-    position: absolute; width: 570px; height: 96px;
-    font-family: 'Poppins'; font-weight: 900; font-size: 48px; 
-    text-decoration: underline; color: #FFFFFF; top: 915px; left: 675px;
+  color: #FFFFFF; font-weight: 900; font-size: 48px; text-decoration: underline;
 }
 
-/* --- LIVROS (POSIÇÕES) --- */
-.img-ney { position: absolute; width: 392px; height: 596px; background: url(9786559210923-228x228.jpg); top: 1900px; left: 160px; }
-.img-rita { position: absolute; width: 427px; height: 592px; background: url(ritalee.png); top: 2600px; left: 160px; }
-.img-carolina { position: absolute; width: 411px; height: 652px; background: url(9788508171279-228x228.jpg); top: 3300px; left: 160px; }
-.img-lula { position: absolute; width: 409px; height: 597px; background: url(lula.png); top: 4050px; left: 160px; }
+/* --- IMAGENS DOS LIVROS (CORRIGIDO) --- */
+/* Como você usa <img> no HTML, o CSS aqui controla apenas a posição */
+.lula, .quarto, .ritalee, .neymatogross { position: absolute; left: 160px; z-index: 10; }
+.neymatogross { top: 1900px; width: 392px; height: 596px; }
+.ritalee { top: 2600px; width: 427px; height: 592px; }
+.quarto { top: 3300px; width: 411px; height: 652px; }
+.lula { top: 4050px; width: 409px; height: 597px; }
 
 /* --- TEXTOS BIOGRAFIAS --- */
 .txt-bio-ney, .txt-bio-rita, .txt-bio-carolina, .txt-bio-lula {
-    position: absolute; font-family: 'Poppins'; font-weight: 500; font-size: 48px; line-height: 72px; color: #1E1E1E;
+  position: absolute; font-weight: 500; font-size: 48px; line-height: 72px; color: #1E1E1E; left: 630px;
 }
-.txt-bio-ney { width: 1094px; top: 1900px; left: 630px; }
-.txt-bio-rita { width: 1094px; top: 2600px; left: 630px; }
-.txt-bio-carolina { width: 1209px; top: 3300px; left: 630px; }
-.txt-bio-lula { width: 1209px; top: 4050px; left: 630px; }
+.txt-bio-ney { width: 1094px; top: 1900px; }
+.txt-bio-rita { width: 1094px; top: 2600px; }
+.txt-bio-carolina { width: 1209px; top: 3300px; }
+.txt-bio-lula { width: 1209px; top: 4050px; }
 
 /* --- RETÂNGULOS ROSA --- */
 .rect-pink-1, .rect-pink-2, .rect-pink-3, .rect-pink-4 {
-    position: absolute; background: #FD00AC; border-radius: 68px;
+  position: absolute; background: #FD00AC; border-radius: 68px; left: 630px;
+  display: flex; align-items: center; padding-left: 40px;
 }
-.rect-pink-1 { width: 765px; height: 92px; top: 2150px; left: 630px; }
-.rect-pink-2 { width: 765px; height: 92px; top: 2850px; left: 630px; }
-.rect-pink-3 { width: 838px; height: 89px; top: 3550px; left: 630px; }
-.rect-pink-4 { width: 530px; height: 89px; top: 4300px; left: 630px; }
+.rect-pink-1 { width: 765px; height: 92px; top: 2150px; }
+.rect-pink-2 { width: 765px; height: 92px; top: 2850px; }
+.rect-pink-3 { width: 838px; height: 89px; top: 3550px; }
+.rect-pink-4 { width: 530px; height: 89px; top: 4300px; }
 
 /* --- DECORAÇÃO --- */
 .mask-carnival {
-    position: absolute; width: 581px; height: 288px; background: url(mask_carnival.png);
-    transform: rotate(16.99deg); top: 1600px; left: 1300px;
+  position: absolute; width: 581px; height: 288px;
+  transform: rotate(16.99deg); top: 1600px; left: 1300px;
 }
 .fireworks {
-    position: absolute; width: 617px; height: 465px; background: url(Fireworks.png);
-    top: 4600px; left: 1300px;
+  position: absolute; width: 617px; height: 465px;
+  top: 4600px; left: 1300px;
+}
+
+/* --- CONFETES NO FUNDO --- */
+.confetti, .confetti-2, .confetti-3 {
+  position: absolute; z-index: 1; opacity: 0.15; pointer-events: none;
 }
